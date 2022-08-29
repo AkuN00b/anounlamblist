@@ -241,7 +241,8 @@ body {
 }
 
 .scrollbar-item {
-  min-width: 100%;
+  min-width: 50%;
+  overflow-x: auto;
   scroll-snap-align: start;
 }
 
@@ -310,14 +311,16 @@ body {
 }
 
 .img-holder {
-  aspect-ratio: var(--width) / var(--height);
-  background-color: var(--light-gray);
+
 }
 
 .img-cover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .badge {
@@ -578,8 +581,6 @@ body {
 \*-----------------------------------*/
 
 .shop .title-wrapper {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 18px;
@@ -932,7 +933,7 @@ body {
 
 .social-link:is(:hover, :focus) { color: var(--hoockers-green); }
 
-.footer-bottom > img { max-width: max-content; }
+.footer-bottom > img { max-width: 50%; }
 
 
 
